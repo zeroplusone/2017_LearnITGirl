@@ -4,7 +4,19 @@
         <TabView.items>
             <TabViewItem title="Feeds">
                 <TabViewItem.view>
-                    <Label text="Feeds" />
+<!--                     <GridLayout>
+                        <ListView items="{{ groceryList }}" id="groceryList" row="1" colSpan="2">
+                            <ListView.itemTemplate> -->
+                                <GridLayout rows="*, 3*, *" columns="*, 3*">
+                                    <Image row="0" col="0" src="~/images/apple.jpg" stretch="aspectFill" horizontalAlignment="center" />
+                                    <Label row="0" col="1" text="User Name" horizontalAlignment="center"/>
+                                    <Image row="1" colSpan="2" src="~/images/apple.jpg" stretch="aspectFill" horizontalAlignment="center" />
+                                    <Button row="2" colSpan="2" text="Like"/>
+                                </GridLayout>
+<!--                             </ListView.itemTemplate>
+                        </ListView>
+                        <ActivityIndicator busy="{{ isLoading }}" rowSpan="2" colSpan="2" />
+                    </GridLayout> -->
                 </TabViewItem.view>
             </TabViewItem>
             <TabViewItem title="Camera">
