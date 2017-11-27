@@ -1,4 +1,22 @@
 <Page loaded="pageLoaded">
-  <ActionBar title="My App" class="action-bar"></ActionBar>
-  <!-- Your UI components go here -->
+    <ActionBar title="My App" class="action-bar"></ActionBar>
+    <TabView>
+        <TabView.items>
+            <TabViewItem title="Feeds">
+                <TabViewItem.view>
+                    <Label text="Feeds" />
+                </TabViewItem.view>
+            </TabViewItem>
+            <TabViewItem title="Camera">
+                <TabViewItem.view>
+                    <Label text="Add Posts" />
+                </TabViewItem.view>
+            </TabViewItem>
+            <TabViewItem title="Setting">
+                <TabViewItem.view>
+                    <Label text="Setting" />
+                </TabViewItem.view>
+            </TabViewItem>
+        </TabView.items>
+    </TabView>
 </Page>
